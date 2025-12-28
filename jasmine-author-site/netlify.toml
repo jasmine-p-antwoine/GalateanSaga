@@ -1,0 +1,10 @@
+[build]
+  base = "jasmine-author-site"
+  publish = "jasmine-author-site/public"
+  command = "hugo"
+
+[build.environment]
+  HUGO_VERSION = "0.153.3"
+
+[context.production.environment]
+  HUGO_ENV = "production"
