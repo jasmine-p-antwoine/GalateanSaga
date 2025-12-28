@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on The Galatean Saga</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on The Galatean Saga</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcement</title>
+      <link>http://localhost:1313/tags/announcement/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/announcement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Website</title>
+      <link>http://localhost:1313/tags/website/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>December Chronicles</title>
+      <link>http://localhost:1313/tags/december-chronicles/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/december-chronicles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gordon Monihan</title>
+      <link>http://localhost:1313/tags/gordon-monihan/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gordon-monihan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Spacer</title>
+      <link>http://localhost:1313/tags/the-spacer/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/the-spacer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Worldbuilding</title>
+      <link>http://localhost:1313/tags/worldbuilding/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/worldbuilding/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

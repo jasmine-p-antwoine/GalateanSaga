@@ -1,0 +1,133 @@
+baseURL = 'https://www.thegalateansaga.com/'
+languageCode = 'en-us'
+title = 'The Galatean Saga'
+theme = 'nomad-tech'
+defaultContentLanguage = 'en'
+disableLanguages = ['zh', 'zh-cn']
+
+[params]
+  author = 'Jasmine P. Antwoine'
+  description = 'The story of a wound that never heals, and the weapon that grew around it. A multi-generational science fiction epic exploring consciousness, identity, and human transformation.'
+  subtitle = 'Science Fiction Author'
+  logo = 'The Galatean Saga'
+  
+  # Customize the homepage hero section
+  [params.hero]
+    enable = true
+    title = "Jasmine P. Antwoine"
+    subtitle = "Science Fiction Author"
+    tagline = "Science Fiction Author"
+    description = "Author of The Galatean Saga - Speculative fiction exploring consciousness, identity, and human transformation"
+  
+ # Social Media Links
+  [[params.social]]
+    name = "Amazon"
+    class = "amazon"
+    icon = "📚"
+    description = "Read my books"
+    url = "https://www.amazon.com/stores/author/B077LQV484/allbooks"
+    button_text = "Visit Author Page"
+  
+  [[params.social]]
+    name = "Substack Newsletter"
+    class = "newsletter"
+    icon = "📬"
+    description = "Subscribe to The Galatean Dispatch"
+    url = "https://substack.com/@thegalateandispatch"
+    button_text = "Subscribe"
+  
+  [[params.social]]
+    name = "Twitter/X"
+    class = "twitter"
+    icon = "🐦"
+    description = "Follow for updates"
+    url = "https://twitter.com/Jasmine_P_Ant"
+    button_text = "Follow Me"
+  
+  [[params.social]]
+    name = "Instagram"
+    class = "instagram"
+    icon = "📷"
+    description = "Visual storytelling"
+    url = "https://www.instagram.com/jasminep_ant"
+    button_text = "Follow"
+  
+  [[params.social]]
+    name = "YouTube"
+    class = "youtube"
+    icon = "📺"
+    description = "Book Trailers and More"
+    url = "https://www.youtube.com/@jasmine.p.antwoine"
+    button_text = "Watch"
+  
+  [[params.social]]
+    name = "Goodreads"
+    class = "goodreads"
+    icon = "📖"
+    description = "Connect on Goodreads"
+    url = "https://goodreads.com/jasmine_p_ant"
+    button_text = "Follow"
+
+# Books/Portfolio
+  [[params.portfolio]]
+    title = "The Spacer"
+    type = "Novella - December Chronicles"
+    icon = "🚀"
+    description = "In a universe where human consciousness is bound by the Verse, Commander Gordon Monihan must prove his humanity after being severed from the neural network. A gripping exploration of identity, autonomy, and what it means to be human."
+    tags = ["Science Fiction", "Psychological Thriller", "Identity"]
+    project_url = "/books/the-spacer/"
+    image = "/images/the-spacer-cover.jpg"
+  
+  [[params.portfolio]]
+    title = "Edge of Surrender"
+    type = "Novel - Book 1 (Coming Soon)"
+    icon = "⚔️"
+    description = "Follow Bem Parkett, a Galatean soldier who cannot connect to the Verse due to genetic incompatibility. His isolation makes him immune to certain weapons—and dangerous to those in power."
+    tags = ["Epic SF", "Multi-generational", "Coming 2026"]
+  
+  # Contact Information
+  [[params.contact]]
+    icon = "🔗"
+    name = "All Links"
+    value = "jasminepantwoine.link"
+  
+  [[params.contact]]
+    icon = "📧"
+    name = "Newsletter"
+    value = "The Galatean Dispatch"
+
+# Menu structure for your author site
+[[menus.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+
+[[menus.main]]
+  name = 'Books'
+  pageRef = '/books'
+  weight = 20
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 30
+
+[[menus.main]]
+  name = 'Blog'
+  pageRef = '/blog'
+  weight = 40
+
+[[menus.main]]
+  name = 'Newsletter'
+  url = 'https://substack.com/@thegalateandispatch'
+  weight = 50
+
+[[menus.main]]
+  name = 'Contact'
+  pageRef = '/contact'
+  weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
