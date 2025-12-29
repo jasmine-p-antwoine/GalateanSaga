@@ -1,10 +1,10 @@
 [build]
-  base = "jasmine-author-site"
-  publish = "jasmine-author-site/public"
-  command = "cd jasmine-author-site && hugo --gc --minify"
+  publish = "public"
+  command = "hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.153.3"
+  HUGO_ENV = "production"
 
 [context.production.environment]
   HUGO_ENV = "production"
