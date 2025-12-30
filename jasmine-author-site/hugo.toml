@@ -82,20 +82,20 @@ disableLanguages = ['zh', 'zh-cn']
     title = "Edge of Surrender"
     type = "Novel - Book 1 (Coming Soon)"
     icon = "⚔️"
-    description = "Follow Bem Parkett, a Galatean soldier who cannot connect to the Verse due to genetic incompatibility. His isolation makes him immune to certain weapons—and dangerous to those in power."
-    tags = ["Epic SF", "Multi-generational", "Coming 2026"]
+    description = "The legend of Gordon Monihan is a ghost story. The reality of Bem Parkett is a live wire. When Terran Captain Travis McCallister captures a seemingly helpless Galatean commander, he believes he's finally won a clean victory. He has, in fact, inserted a virus into the heart of his own command. Because Parkett knows the old story. He knows that proving your humanity to the Terrans is a death sentence. His plan isn't to prove anything. It's to burn their rulebook to ash."
+    tags = ["Epic SF", "Action Thriller", "Coming 2026"]
 	image = "/images/Edge of Surrender draft cover.jpg"
   
   # Contact Information
   [[params.contact]]
     icon = "🔗"
-    name = "All Links"
-    value = "jasminepantwoine.link"
+    description = "Where to find Jasmine"
+    url = "https://jasminepantwoine.link"
   
   [[params.contact]]
     icon = "📧"
-    name = "Newsletter"
-    value = "The Galatean Dispatch"
+    description = "Newsletter"
+    url = "https://galateandispatch.substack.com/"
 
 # Menu structure for your author site
 [[menus.main]]
