@@ -84,6 +84,7 @@ disableLanguages = ['zh', 'zh-cn']
     icon = "⚔️"
     description = "Follow Bem Parkett, a Galatean soldier who cannot connect to the Verse due to genetic incompatibility. His isolation makes him immune to certain weapons—and dangerous to those in power."
     tags = ["Epic SF", "Multi-generational", "Coming 2026"]
+	image = "/images/Edge of Surrender draft cover.jpg"
   
   # Contact Information
   [[params.contact]]
