@@ -19,9 +19,9 @@ draft: false
 
 ## Synopsis
 
-2253. On Surinam Station, the story of Commander Gordon Monihan is more than history—it is a legend. For apprentices Bindy and Bentley, the tale is a debate about glory and heroism. But the silent, watchful apprentice, Bem, hears something else in their Sergeant’s voice. He sees the cracks in the official narrative and understands what the others do not: the truth is far deadlier than the myth.
+2253\. On Surinam Station, the story of Commander Gordon Monihan is more than history—it is a legend. For apprentices Bindy and Bentley, the tale is a debate about glory and heroism. But the silent, watchful apprentice, Bem, hears something else in their Sergeant’s voice. He sees the cracks in the official narrative and understands what the others do not: the truth is far deadlier than the myth.
 
-2203. For two decades, the Terran Alliance has fought the "Spacer" colonists of Galatea, convinced they are battling a monstrous, unfeeling hive-mind. To the Terrans, Spacers are not human; they are biological machines that must be destroyed.
+2203\. For two decades, the Terran Alliance has fought the "Spacer" colonists of Galatea, convinced they are battling a monstrous, unfeeling hive-mind. To the Terrans, Spacers are not human; they are biological machines that must be destroyed.
 
 The standing order is absolute: No Prisoners.
 

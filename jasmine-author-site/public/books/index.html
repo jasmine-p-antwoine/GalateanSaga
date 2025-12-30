@@ -71,20 +71,31 @@
 </nav>
     <main id="main" role="main">
         
-<div style="margin-top: 5rem; padding: 2rem; background: rgba(255, 255, 255, 0.02); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
-    <h1 style="color: #00d4ff; margin-bottom: 2rem; text-align: center;">Books</h1>
-    
-    
-    <div style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-        <h1 id="the-galatean-saga">The Galatean Saga</h1>
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">Books.md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">cat Books.md</span>
+            </div>
+            <div class="content">
+                <h1 id="the-galatean-saga">The Galatean Saga</h1>
 <p>An epic multi-generational science fiction series exploring consciousness, identity, and what it means to be human in a universe transformed by technology.</p>
 <h2 id="available-now">Available Now</h2>
 <h3 id="the-spacer">The Spacer</h3>
 <p><strong>December Chronicles Series</strong></p>
 <p>Commander Gordon Monihan faces a tribunal to prove his humanity after being severed from The Verse, the neural network that binds human consciousness. A story of identity, autonomy, and the price of connection in a world where your thoughts are never truly your own.</p>
 <p>[Buy on Amazon]
-(Kindle: <a href="https://www.amazon.com/dp/B0DF5J53DW">https://www.amazon.com/dp/B0DF5J53DW</a>) | <a href="#">Read Sample Chapter</a>
-(Paperback: <a href="https://www.amazon.com/dp/B0G38GV9D6">https://www.amazon.com/dp/B0G38GV9D6</a>) | <a href="#">Read Sample Chapter</a></p>
+(Kindle: <a href="https://www.amazon.com/dp/B0DF5J53DW">https://www.amazon.com/dp/B0DF5J53DW</a>)
+(Paperback: <a href="https://www.amazon.com/dp/B0G38GV9D6">https://www.amazon.com/dp/B0G38GV9D6</a>)</p>
 <hr>
 <h2 id="the-main-series">The Main Series</h2>
 <h3 id="kill-on-sight-the-sentinel-ghost-a-bem-parkett-omnibus">Kill-on-Sight: The Sentinel Ghost (A Bem Parkett Omnibus)</h3>
@@ -94,44 +105,37 @@ Start with the myth at its peak&hellip;</p>
 He is the monster they fear. But is the monster real? Commander Bem Parkett is captured. The Terrans see
 a ruthless fanatic. They have the evidence, the legend. But as they break him down, they find a man that doesn&rsquo;t fit the myth. This high-octane military thriller, told mostly from the Terran perspective, introduces the enigma that is Bem Parkett.
 Then, witness the day the legend was born&hellip;</p>
-<p>**Book 2. Embers of Duty (A Kill-on-Sight book)
+<p><strong>Book 2. Embers of Duty (A Kill-on-Sight book)</strong>
 His first mission behind enemy lines. His first, and
 most devastating, lie.
 A young, idealistic Bem Parkett undertakes his first
 deep-cover mission. He finds an unexpected world among the enemy, forcing him to make a choice that will haunt the commander he becomes.
-Uncover the truth behind the icon&hellip;
-**Book 3. Fortress of Audacity (A Kill-on-Sight book) They said he destroyed a fortress. The truth is far more
+Uncover the truth behind the icon&hellip;</p>
+<p><strong>Book 3. Fortress of Audacity (A Kill-on-Sight book) They said he destroyed a fortress. The truth is far more</strong>
 dangerous.
 The official record credits Bem with the daring de-
 struction of the impregnable station Starlink. But a Terran investigator uncovers a different story—one of hidden failures and a cunning mind that knows how to spin disaster into legend.
-Finally, witness the mastermind claim his power&hellip;
-**Book 4. Claim of Dominion (A Kill-on-Sight book) The spy has become a symbol. The symbol must now
+Finally, witness the mastermind claim his power&hellip;</p>
+<p><strong>Book 4. Claim of Dominion (A Kill-on-Sight book) The spy has become a symbol. The symbol must now</strong>
 become a leader.
 With his reputation secured, Bem turns his genius to
 the political arena of the Galatean Core. To save his people from the war to come, he must conquer the politics of the present, earning a rank that sets him on a collision course with destiny.</p>
 <p>What to expect: A non-chronological unraveling of a legend. Gritty, character-driven operations where perception is the ultimate weapon. The long fuse that leads to the Alien Invasion.</p>
-<hr>
-<p>The Many Layers of the Galatean Saga
-The saga is structured across multiple eras, each revealing a deeper layer of the universe:</p>
-<p>The Age of War → The struggle for survival and the price of victory.
-The Unraveling Thread → A search for truth that changes everything.
-Beyond the Known → A final step into the unknown.</p>
-<p>Each book, each revelation, brings the reader closer to understanding the forces shaping history—and the choices that will define the future.</p>
-<hr>
-<h2 id="the-universe">The Universe</h2>
-<p>The Galatean Saga is an experiment in storytelling, expanding beyond traditional novels into music, interactive media, and visual experiences. Each format reveals different perspectives, emotions, and moments, making The Galatean Saga an evolving experience—one that can be felt as much as it can be read.</p>
-<p><a href="#">Explore the Worldbuilding</a> | <a href="https://jasminepantwoine.bandcamp.com/album/moonborn-songs-of-defiance">Listen to Moonborn: Songs of Defiance</a></p>
 
-    </div>
-    
-    
-    
-    <div class="blog-posts">
-        
-        <article class="blog-post">
-            <h3>The Spacer</h3>
-            <div class="blog-meta">December 2024</div>
-            <p><div style="text-align: center; margin: 2rem auto;">
+            </div>
+            
+            <div class="book-pages-section" style="margin-top: 2rem;">
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls -la books/</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; padding-bottom: 2rem;">
+                    
+                    <div style="background: rgba(30, 41, 59, 0.4); border-radius: 8px; border: 1px solid rgba(100, 116, 139, 0.3); padding: 1.5rem; overflow: hidden;">
+                        
+                        <h3 style="color: #38bdf8; margin-bottom: 0.75rem;">The Spacer</h3>
+                        <div style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 1rem;">December 15, 2024</div>
+                        <div style="color: #cbd5e1; line-height: 1.6; font-size: 0.9rem; margin-bottom: 1.25rem;"><div style="text-align: center; margin: 2rem auto;">
   <img src="/images/the-spacer-cover.jpg" alt="The Spacer Book Cover" style="max-width: 400px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
 </div>
 <h2 id="a-december-chronicles-novella">A December Chronicles Novella</h2>
@@ -141,14 +145,15 @@ Beyond the Known → A final step into the unknown.</p>
 <strong>Length:</strong> Novella (~35,000 words)</p>
 <hr>
 <h2 id="synopsis">Synopsis</h2>
-<ol start="2253">
-<li>
-<p>On Surinam Station, the story of Commander Gordon Monihan is more than history—it is a legend. For apprentices Bindy and Bentley, the tale is a debate about glory and heroism. But the silent, watchful apprentice, Bem, hears something else in their Sergeant’s voice. He sees the cracks in the official narrative and understands what the others do not: the truth is far deadlier than the myth.</p></p>
-            <a href="http://localhost:1313/books/the-spacer/" class="btn btn-secondary">Read More</a>
-        </article>
-        
-    </div>
-    
+<p>2253. On Surinam Station, the story of Commander Gordon Monihan is more than history—it is a legend. For apprentices Bindy and Bentley, the tale is a debate about glory and heroism. But the silent, watchful apprentice, Bem, hears something else in their Sergeant’s voice. He sees the cracks in the official narrative and understands what the others do not: the truth is far deadlier than the myth.</p></div>
+                        <a href="http://localhost:1313/books/the-spacer/" style="display: inline-block; padding: 0.6rem 1.25rem; background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%); color: white; text-decoration: none; border-radius: 4px; font-size: 0.9rem; font-weight: 500;">View Details</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </div>
 
     </main>

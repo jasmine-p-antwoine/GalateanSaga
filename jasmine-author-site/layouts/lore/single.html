@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">{{ .Title }}.entry</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">query_database --term="{{ .Title }}"</span>
+            </div>
+            
+            <div class="content" style="padding: 2rem 0;">
+                {{ .Content }}
+            </div>
+            
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(100, 116, 139, 0.3);">
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">return_to_index</span>
+                </div>
+                <a href="{{ .Parent.Permalink }}" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.2); color: #60a5fa; text-decoration: none; border-radius: 4px; font-size: 0.9rem; border: 1px solid rgba(59, 130, 246, 0.3);">← Back to {{ .Parent.Title }}</a>
+            </div>
+        </div>
+    </article>
+</div>
+{{ end }}

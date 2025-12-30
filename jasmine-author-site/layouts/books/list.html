@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">{{ .Title }}.md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">cat {{ .Title }}.md</span>
+            </div>
+            <div class="content">
+                {{ .Content }}
+            </div>
+            {{ if .Pages }}
+            <div class="book-pages-section" style="margin-top: 2rem;">
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls -la books/</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; padding-bottom: 2rem;">
+                    {{ range .Pages }}
+                    <div style="background: rgba(30, 41, 59, 0.4); border-radius: 8px; border: 1px solid rgba(100, 116, 139, 0.3); padding: 1.5rem; overflow: hidden;">
+                        {{ if .Params.image }}
+                        <div style="text-align: center; margin-bottom: 1rem;">
+                            <img src="{{ .Params.image }}" alt="{{ .Title }}" style="max-width: 100%; height: auto; border-radius: 6px;">
+                        </div>
+                        {{ end }}
+                        <h3 style="color: #38bdf8; margin-bottom: 0.75rem;">{{ .Title }}</h3>
+                        <div style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 1rem;">{{ .Date.Format "January 2, 2006" }}</div>
+                        <div style="color: #cbd5e1; line-height: 1.6; font-size: 0.9rem; margin-bottom: 1.25rem;">{{ .Summary }}</div>
+                        <a href="{{ .Permalink }}" style="display: inline-block; padding: 0.6rem 1.25rem; background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%); color: white; text-decoration: none; border-radius: 4px; font-size: 0.9rem; font-weight: 500;">View Details</a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </article>
+</div>
+{{ end }}

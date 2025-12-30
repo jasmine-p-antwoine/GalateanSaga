@@ -1,9 +1,11 @@
 ---
-title: "Books"
+title: "The Galatean Saga"
 date: 2025-12-27
 draft: false
 ---
 
-# The Galatean Saga
+# Explore the universe
 
-My published and upcoming works exploring consciousness, identity, and human transformation.
+From the published and upcoming books to exploring the universe.
+Every war has two histories. 
+Examine the dossiers, doctrines, and incident reports from both sides of the Galatean conflict.

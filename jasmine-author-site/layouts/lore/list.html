@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">{{ .Title }}.archive</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">access_archive --category={{ .Title | lower }}</span>
+            </div>
+            
+            <div class="content">
+                {{ .Content }}
+            </div>
+            
+            {{ if .Pages }}
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(100, 116, 139, 0.3);">
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls -la {{ .Title | lower }}/</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    {{ range .Pages }}
+                    <div style="background: rgba(30, 41, 59, 0.4); border-radius: 8px; border: 1px solid rgba(100, 116, 139, 0.3); padding: 1.5rem; border-left: 3px solid #38bdf8;">
+                        <h3 style="color: #38bdf8; margin-bottom: 0.5rem; font-size: 1.2rem;">{{ .Title }}</h3>
+                        <div style="color: #94a3b8; font-size: 0.85rem; margin-bottom: 0.75rem;">
+                            <span style="opacity: 0.7;">Last Modified:</span> {{ .Date.Format "2006-01-02" }}
+                        </div>
+                        <p style="color: #cbd5e1; line-height: 1.5; font-size: 0.9rem; margin-bottom: 1rem;">{{ .Summary }}</p>
+                        <a href="{{ .Permalink }}" style="display: inline-block; padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.2); color: #60a5fa; text-decoration: none; border-radius: 4px; font-size: 0.85rem; border: 1px solid rgba(59, 130, 246, 0.3); font-family: monospace;">access_file →</a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </article>
+</div>
+{{ end }}

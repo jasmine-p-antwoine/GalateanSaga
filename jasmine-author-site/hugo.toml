@@ -85,6 +85,15 @@ disableLanguages = ['zh', 'zh-cn']
     description = "The legend of Gordon Monihan is a ghost story. The reality of Bem Parkett is a live wire. When Terran Captain Travis McCallister captures a seemingly helpless Galatean commander, he believes he's finally won a clean victory. He has, in fact, inserted a virus into the heart of his own command. Because Parkett knows the old story. He knows that proving your humanity to the Terrans is a death sentence. His plan isn't to prove anything. It's to burn their rulebook to ash."
     tags = ["Epic SF", "Action Thriller", "Coming 2026"]
 	image = "/images/Edge of Surrender draft cover.jpg"
+	
+  [[params.portfolio]]
+    title = "Dig Deeper"
+    type = "Access Information about the universe and the characters"
+    icon = "🚀 ️⚔️"
+    description = "Every war has two histories. Access classified dossiers, location files, historical records, and classified terminology from both sides of the Galatean conflict. For readers who want to explore the deeper layers of the universe."
+    tags = ["History", "Characters", "Locations", "Lexicon"]
+    project_url = "/lore/"
+    image = "/images/lore.jpg"
   
   # Contact Information
   [[params.contact]]

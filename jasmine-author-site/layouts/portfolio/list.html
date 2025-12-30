@@ -5,33 +5,72 @@
             <h1 style="color: #00d4ff; font-size: 3rem; margin-bottom: 1rem;">{{ .Title }}</h1>
             <p style="font-size: 1.2rem; opacity: 0.9;">{{ .Content }}</p>
         </div>
+        
+        <!-- Books Section (Original styling) -->
         <div class="portfolio-grid">
-            {{ range .Site.Params.portfolio }}
-<div class="portfolio-item" style="display: flex; flex-direction: column;">
-    <div class="portfolio-image" style="height: 350px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); border-radius: 8px 8px 0 0;">
-        {{ if .image }}
-        <img src="{{ .image }}" alt="{{ .title }}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-        {{ else }}
-        <div style="font-size: 2rem;">{{ .icon }} {{ .type }}</div>
-        {{ end }}
-    </div>
-    <div class="portfolio-content" style="padding: 1.5rem;">
-        <h3>{{ .title }}</h3>
-        <p>{{ .description }}</p>
-        <div style="margin-top: 1rem;">
-            {{ range .tags }}
-            <span style="background: rgba(0,212,255,0.2); padding: 4px 8px; border-radius: 15px; font-size: 0.8rem; margin-right: 0.5rem; display: inline-block; margin-bottom: 0.5rem;">{{ . }}</span>
+            {{ range first 2 .Site.Params.portfolio }}
+            <div class="portfolio-item" style="display: flex; flex-direction: column;">
+                <div class="portfolio-image" style="height: 350px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); border-radius: 8px 8px 0 0;">
+                    {{ if .image }}
+                    <img src="{{ .image }}" alt="{{ .title }}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    {{ else }}
+                    <div style="font-size: 2rem;">{{ .icon }} {{ .type }}</div>
+                    {{ end }}
+                </div>
+                <div class="portfolio-content" style="padding: 1.5rem;">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                    <div style="margin-top: 1rem;">
+                        {{ range .tags }}
+                        <span style="background: rgba(0,212,255,0.2); padding: 4px 8px; border-radius: 15px; font-size: 0.8rem; margin-right: 0.5rem; display: inline-block; margin-bottom: 0.5rem;">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ if .project_url }}
+                    <div style="margin-top: 1rem;">
+                        <a href="{{ .project_url }}" class="btn btn-secondary">View Details</a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
             {{ end }}
         </div>
-        {{ if .project_url }}
-        <div style="margin-top: 1rem;">
-            <a href="{{ .project_url }}" class="btn btn-secondary">View Details</a>
+        
+        <!-- Dig Deeper Section (Special full-width styling) -->
+        {{ range after 2 .Site.Params.portfolio }}
+        <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border-radius: 12px; border: 2px solid rgba(59, 130, 246, 0.3); padding: 2.5rem; margin-top: 3rem;">
+            <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: center;">
+                {{ if .image }}
+                <div style="text-align: center;">
+                    <img src="{{ .image }}" alt="{{ .title }}" style="max-width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);">
+                </div>
+                {{ end }}
+                
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <span style="font-size: 2rem;">{{ .icon }}</span>
+                        <div>
+                            <h3 style="color: #38bdf8; font-size: 2rem; margin: 0;">{{ .title }}</h3>
+                            <p style="color: #94a3b8; font-size: 1rem; margin: 0.25rem 0 0 0;">{{ .type }}</p>
+                        </div>
+                    </div>
+                    
+                    <p style="color: #e2e8f0; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">{{ .description }}</p>
+                    
+                    {{ if .tags }}
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        {{ range .tags }}
+                        <span style="background: rgba(139, 92, 246, 0.2); padding: 0.4rem 1rem; border-radius: 12px; font-size: 0.9rem; color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3);">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    
+                    {{ if .project_url }}
+                    <a href="{{ .project_url }}" style="display: inline-block; padding: 0.85rem 2rem; background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); color: white; text-decoration: none; border-radius: 8px; font-size: 1rem; font-weight: 600; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);">Explore the Universe</a>
+                    {{ end }}
+                </div>
+            </div>
         </div>
         {{ end }}
-    </div>
-</div>
-{{ end }}
-        </div>
     </div>
 </div>
 {{ end }}
